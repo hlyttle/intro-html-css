@@ -1,0 +1,205 @@
+* {
+    background-color: #f0e4d5;
+    font-family: "Trirong", serif;
+    color: #473b4b;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    margin: 5px;
+    padding: 5px;
+}
+
+.header {
+    color: #f8ede3;
+    background-color: #7d6e83;
+}
+
+.site-title {
+    font-family: "Aclonica", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 50px 300px auto;
+    grid-template-areas: "title title title"
+    "image image sidebar1"
+    "main main sidebar2";
+    padding: 30px;
+}
+
+#gals {
+    font-family: "Aclonica", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+    grid-area: title;
+}
+
+#nightimg {
+    height: 75%;
+    border-radius: 50%;
+    box-shadow:rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+}
+
+#date {
+    grid-area: date;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#cactus {
+    height: 200px;
+    grid-area: image;
+}
+
+.map-page {
+    display: grid;
+}
+
+#blog-page {
+    display: flex;
+    flex-direction: row;
+}
+
+#blog-body {
+    width: 75%;
+    text-align: center;
+}
+
+/*
+#blog-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 5fr;
+    grid-template-areas: ". . date ."
+    ". image . ." 
+    ". image . sidebar2"
+    "title title title sidebar2"
+    "content content content sidebar2";
+    flex-wrap: wrap;
+}
+*/
+
+#article {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#blog-title {
+    grid-area: title;
+}
+
+#blog-text {
+    grid-area: content;
+}
+
+#journey-title {
+    text-align: center;
+}
+
+#prog-map {
+    height: 400px;
+    border: 5px #7d6e83 ridge;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    font-size: 15px;
+}
+
+li, .blog-link {
+    color:#7d6e83;
+}
+
+#archive-head {
+    color: #473b4b;
+}
+
+#archive {
+    grid-area: sidebar2;
+    padding-top: 50px;
+}
+
+.footer-link {
+    color: #bda799;
+}
+
+#intro {
+    grid-area: main;
+}
+
+article {
+    width: 100%;
+    grid-area: main;
+    height: 400px;
+}
+
+#leaders {
+    grid-area: sidebar1;
+}
+
+#footnav {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-areas: "contact follow donate";
+}
+
+.contact {
+    grid-area: contact;
+    justify-self: center;
+    align-self: start;
+}
+
+.insta {
+    grid-area: follow;
+    justify-self: center;
+    align-self: start;
+    margin-block: 0px;
+}
+
+#insta-logo {
+    height: 17px;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.donate {
+    grid-area: donate;
+    justify-self: center;
+    align-self: start;
+}
+
+#meet {
+    color:#ababab;
+}
+
+#progress {
+    color:#ababab;
+}
+
+#latest {
+    color:#ababab;
+}
